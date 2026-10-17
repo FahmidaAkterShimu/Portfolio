@@ -9,10 +9,12 @@ export default function ContactForm({ services }) {
     const form = e.currentTarget;
     setStatus("sending");
     try {
-      const res = await fetch("/api/contact", {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/contact`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(Object.fromEntries(new FormData(form))),
+        body: JSON.stringify(
+          Object.fromEntries(new FormData(form))
+        ),
       });
       if (!res.ok) throw new Error("failed");
       form.reset();
