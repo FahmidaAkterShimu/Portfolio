@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import ThemeToggle from "./ThemeToggle";
 import { cn } from "@/utils/cn";
+import Image from "next/image";
 
 const links = [["/#about", "About"], ["/#services", "Services"], ["/#projects", "Projects"], ["/contact", "Contact"]];
 const linkCls = "block rounded-full px-3 py-1.5 text-sm font-medium text-muted transition-colors hover:bg-accent/10 hover:text-accent";
@@ -26,8 +27,11 @@ export default function Navbar({ name, short }) {
       <div ref={bar} className="fixed left-0 top-0 z-60 h-0.75 w-full origin-left scale-x-0 bg-accent" aria-hidden="true" />
       <header className="pointer-events-none sticky top-0 z-50 px-4 pt-4">
         <div className="pointer-events-auto mx-auto flex max-w-7xl items-center justify-between rounded-full border border-line bg-panel/90 py-2 pl-2 pr-3 shadow-lg backdrop-blur">
-          <Link href="/" className="flex items-center gap-3 font-bold tracking-tight">
-            <span className="grid h-10 w-10 place-items-center rounded-full bg-accent font-extrabold text-on-accent">{short}</span>
+          <Link href="/" aria-label={name} className="flex items-center gap-3 font-bold tracking-tight">
+            <span className="grid h-10 w-10 place-items-center rounded-full border-2 border-accent">
+              <Image src="/logo-for-light-mode.svg" alt="" width={24} height={24} unoptimized className="dark:hidden" />
+              <Image src="/logo-for-dark-mode.svg" alt="" width={24} height={24} unoptimized className="hidden dark:block" />
+            </span>
             <span className="hidden sm:block">{name}</span>
           </Link>
 

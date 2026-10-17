@@ -3,8 +3,8 @@ export const site = {
   name: "Fahmida Akter Shimu",
   short: "FS",
   watermark: "Fahmida",
-  role: "Junior Frontend Developer",
-  roles: ["Junior Frontend Developer", "React Developer", "Next.js Developer"],
+  role: "Junior Web Developer",
+  roles: ["Junior Web Developer", "Junior Frontend Developer", "React Developer", "Next.js Developer"],
   intro: "I build responsive web apps with React, Next.js and Tailwind CSS, and connect them to Node.js and MongoDB backends.",
   status: "Available for new projects",
   about: [
