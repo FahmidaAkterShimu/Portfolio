@@ -7,7 +7,7 @@ export const site = {
   intro: "I build responsive web apps with React, Next.js and Tailwind CSS, and connect them to Node.js and MongoDB backends.",
   status: "OPEN TO OPPORTUNITIES",
   about: [
-    "CSE graduate and Web Developer proficient in React, Next.js (App Router), and Tailwind CSS. Experienced in building responsive web applications, integrating RESTful APIs with Node.js/MongoDB backends, and implementing role-based authentication (Better Auth, JWT) and interactive user dashboards.",
+    "Computer Science and Engineering graduate with hands-on experience building responsive web applications using React.js, Next.js, and Tailwind CSS. Familiar with REST API integration, Node.js, Express.js, MongoDB, and authentication. Seeking a Junior Frontend Developer or Web Developer opportunity to contribute to real-world projects and grow as a developer.",
   ],
   location: "Dhaka, Bangladesh",
   phone: "+8801635315972",
@@ -15,7 +15,7 @@ export const site = {
   github: "https://github.com/FahmidaAkterShimu",
   linkedin: "https://linkedin.com/in/fahmida-akter-shimu",
   resume: "/Resume.pdf",
-  languages: ["Bengali: Native", "English: Conversational / Intermediate"],
+  languages: ["Bengali: Native", "English: Intermediate"],
   stats: [
     { value: "9+", label: "Months learning" },
     { value: "10+", label: "Projects built" },
@@ -34,8 +34,8 @@ export const stack = [
   { group: "Frontend", items: ["React.js", "Next.js (App Router)", "HTML5", "CSS3", "Tailwind CSS"] },
   { group: "Languages", items: ["JavaScript (ES6+)", "C", "C++", "Python"] },
   { group: "Backend and Database", items: ["Node.js", "Express.js", "REST APIs", "MongoDB", "SQL"] },
-  { group: "Auth and Tools", items: ["Better Auth", "JWT/JWKS", "Git", "GitHub", "Vercel", "Vite", "MongoDB Atlas"] },
-  { group: "UI and Libraries", items: ["HeroUI", "DaisyUI", "Lucide React", "React Toastify", "Next/Image", "Swiper", "next-themes"] },
+  { group: "Auth and Tools", items: ["Better Auth", "JWT", "Git", "GitHub", "Vercel", "Vite", "MongoDB Atlas"] },
+  { group: "UI and Libraries", items: ["HeroUI", "DaisyUI", "Lucide React", "React Toastify", "next/image", "Swiper", "next-themes"] },
 ];
 
 
