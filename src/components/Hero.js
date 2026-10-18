@@ -30,10 +30,10 @@ export default function Hero({ site, projects }) {
       <span className="watermark" aria-hidden="true">{site.watermark}</span>
       <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 py-16 sm:px-6 sm:py-24 lg:grid-cols-2 lg:px-8">
         <div>
-          <p className="mb-6 inline-flex items-center gap-3 text-muted">
-            <span className="relative flex h-2.5 w-2.5" aria-hidden="true">
+          <p className="mb-6 inline-flex items-center gap-3 text-accent text-sm">
+            <span className="relative flex items-center justify-center h-2.5 w-2.5" aria-hidden="true">
               <span className="absolute inline-flex h-full w-full rounded-full bg-accent opacity-75 motion-safe:animate-ping" />
-              <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-accent" />
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
             </span>
             {site.status}
           </p>
@@ -56,8 +56,8 @@ export default function Hero({ site, projects }) {
           </p>
           <p className="mb-8 mt-4 max-w-xl text-xl text-muted">{site.intro}</p>
           <div className="flex flex-wrap gap-3">
-            <a className="btn btn-primary" href="#projects">View projects</a>
-            <Link className="btn" href="/resume" target="_blank" rel="noopener noreferrer">View resume</Link>
+            <a className="btn btn-primary" href="#projects">View Projects</a>
+            <Link className="btn" href="/resume" target="_blank" rel="noopener noreferrer">View Resume</Link>
           </div>
           <dl className="mt-14 flex flex-wrap gap-10">
             {site.stats.map((s) => (

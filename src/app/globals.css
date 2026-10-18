@@ -78,7 +78,7 @@
   .cursor-glow { display:none; }
 }
 
-/* Hero watermark: boro, bhora, khub halka, static */
+/* Hero watermark */
 .watermark { position:absolute; left:50%; top:50%; z-index:-1; translate:-50% -50%; font-size:clamp(6rem,23vw,30rem); font-weight:900; letter-spacing:-.04em; line-height:1; white-space:nowrap; color:color-mix(in srgb, var(--ink) 4%, transparent); user-select:none; pointer-events:none; }
 
 /* Hero: project fan */

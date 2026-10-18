@@ -5,7 +5,7 @@ export const site = {
   role: "Junior Web Developer",
   roles: ["Junior Web Developer", "Junior Frontend Developer", "React Developer", "Next.js Developer"],
   intro: "I build responsive web apps with React, Next.js and Tailwind CSS, and connect them to Node.js and MongoDB backends.",
-  status: "Available for new projects",
+  status: "OPEN TO OPPORTUNITIES",
   about: [
     "CSE graduate and Web Developer proficient in React, Next.js (App Router), and Tailwind CSS. Experienced in building responsive web applications, integrating RESTful APIs with Node.js/MongoDB backends, and implementing role-based authentication (Better Auth, JWT) and interactive user dashboards.",
   ],
@@ -14,7 +14,7 @@ export const site = {
   email: "fahmidaaktershimu@gmail.com",
   github: "https://github.com/FahmidaAkterShimu",
   linkedin: "https://linkedin.com/in/fahmida-akter-shimu",
-  resume: "/resume.pdf",
+  resume: "/Resume.pdf",
   languages: ["Bengali: Native", "English: Conversational / Intermediate"],
   stats: [
     { value: "9+", label: "Months learning" },

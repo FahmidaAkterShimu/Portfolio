@@ -24,17 +24,32 @@ export default function ContactForm({ services }) {
     }
   }
 
-  const label = "grid gap-1.5 font-medium";
+  const label = "sr-only";
   return (
     <form onSubmit={onSubmit} className="grid gap-5">
-      <div className="grid gap-5 sm:grid-cols-2">
-        <label className={label}>Name<input className="field" name="name" required maxLength={100} autoComplete="name" placeholder="Jane Smith" /></label>
-        <label className={label}>Email<input className="field" name="email" type="email" required maxLength={150} autoComplete="email" placeholder="you@example.com" /></label>
-      </div>
-      <label className={label}>Phone<input className="field" name="phone" maxLength={30} autoComplete="tel" placeholder="+880 1XXX XXXXXX" /></label>
 
-      <label className={label}>Your Message<textarea className="field" name="message" rows={5} required maxLength={3000} placeholder="Let’s talk!" /></label>
+      <div>
+        <label htmlFor="name" className={label}>Name</label>
+        <input id="name" className="field w-full " name="name" required maxLength={100} autoComplete="name" placeholder="Your Name" />
+      </div>
+
+      <div>
+        <label htmlFor="email" className={label}>Email</label>
+        <input id="email" className="field w-full " name="email" type="email" required maxLength={150} autoComplete="email" placeholder="Email Address" />
+      </div>
+
+      <div>
+        <label htmlFor="phone" className={label}>Phone</label>
+        <input id="phone" className="field w-full " name="phone" maxLength={30} autoComplete="tel" placeholder="+880 1XXX XXXXXX" />
+      </div>
+
+      <div>
+        <label htmlFor="message" className={label}>Your Message</label>
+        <textarea id="message" className="field w-full " name="message" rows={5} required maxLength={3000} placeholder="Your Message!" />
+      </div>
+
       <input name="website" tabIndex={-1} autoComplete="off" className="hidden" aria-hidden="true" />
+
       <button className="btn btn-primary w-full disabled:opacity-60" type="submit" disabled={status === "sending"}>
         {status === "sending" ? "Sending..." : "Send message ↗"}
       </button>
@@ -42,6 +57,7 @@ export default function ContactForm({ services }) {
         {status === "sent" && <span className="text-accent">Message sent. I will reply soon.</span>}
         {status === "error" && <span className="text-red-500">Could not send. Please try again or email me directly.</span>}
       </p>
+
     </form>
   );
 }
