@@ -1,4 +1,3 @@
-// Shob content ekhane edit koro. Component-e hat dite hobe na.
 export const site = {
   name: "Fahmida Akter Shimu",
   short: "FS",
