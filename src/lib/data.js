@@ -8,7 +8,7 @@ export const site = {
   intro: "I build responsive web apps with React, Next.js and Tailwind CSS, and connect them to Node.js and MongoDB backends.",
   status: "Available for new projects",
   about: [
-    "CSE graduate and Frontend Developer proficient in React, Next.js (App Router), and Tailwind CSS. Experienced in building responsive web applications, integrating RESTful APIs with Node.js/MongoDB backends, and implementing role-based authentication (Better Auth, JWT) and interactive user dashboards.",
+    "CSE graduate and Web Developer proficient in React, Next.js (App Router), and Tailwind CSS. Experienced in building responsive web applications, integrating RESTful APIs with Node.js/MongoDB backends, and implementing role-based authentication (Better Auth, JWT) and interactive user dashboards.",
   ],
   location: "Dhaka, Bangladesh",
   phone: "+8801635315972",
