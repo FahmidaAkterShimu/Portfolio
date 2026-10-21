@@ -4,24 +4,22 @@ import ContactForm from "@/components/ContactForm";
 export const metadata = { title: `Contact | ${site.name}` };
 
 export default function Contact() {
-  const row = "flex items-center gap-3 text-sm text-white/80 transition-colors hover:text-accent";
+  const row = "flex items-center gap-3 text-sm text-ink transition-colors hover:text-accent";
   const icon =
     "grid h-9 w-9 shrink-0 place-items-center rounded-lg bg-accent/10 text-accent";
 
   return (
     <main className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
-      {/* Heading (grid er baire) */}
       <h1 className="text-[clamp(3.5rem,13vw,9rem)] font-extrabold uppercase leading-[.9] tracking-tighter">
         Let&apos;s<br /><span className="text-accent">Connect</span>
       </h1>
 
-      {/* Form (left) + Cards (right): same top line theke shuru */}
       <div className="mt-14 grid items-start gap-12 pb-16 lg:grid-cols-[1.4fr_1fr]">
         <ContactForm services={services} />
 
         <aside className="grid content-start gap-5">
-          <div className="rounded-xl border border-white/10 bg-white/3 p-6">
-            <h2 className="mb-5 text-sm font-semibold">Or reach out directly</h2>
+          <div className="panel p-6">
+            <h2 className="mb-5 text-sm font-semibold text-ink">Or reach out directly</h2>
             <div className="grid gap-4">
               <a className={row} href={`mailto:${site.email}`}>
                 <span className={icon}>✉</span>
@@ -47,7 +45,7 @@ export default function Contact() {
               <span className="h-2 w-2 animate-pulse rounded-full bg-accent shadow-[0_0_8px] shadow-accent" />
               Open to work
             </p>
-            <p className="text-sm text-white/60">
+            <p className="text-sm text-muted">
               Available for full-time roles and interesting contract opportunities.
               Response within 24h.
             </p>
